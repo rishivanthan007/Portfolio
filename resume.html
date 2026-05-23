@@ -30,7 +30,10 @@
           </div>
 
           <figure class="resume-photo-card">
-            <img src="MMEEE.png" alt="Portrait of Rishivanthan" />
+            <img src="MMEEE.png" alt="Portrait of Rishivanthan" onerror="this.closest('.resume-photo-card').classList.add('image-missing')" />
+            <div class="private-image-fallback" aria-hidden="true">
+              <span>R</span>
+            </div>
           </figure>
         </header>
 

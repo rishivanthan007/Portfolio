@@ -62,7 +62,10 @@
             <path d="M28 3l6.5 16.5L52 28l-17.5 8.5L28 53l-6.5-16.5L4 28l17.5-8.5z" />
           </svg>
           <figure class="hero-portrait">
-            <img src="me carr.png" alt="Illustrated portrait of Rishivanthan" />
+            <img src="me carr.png" alt="Illustrated portrait of Rishivanthan" onerror="this.closest('.hero-portrait').classList.add('image-missing')" />
+            <div class="private-image-fallback" aria-hidden="true">
+              <span>R</span>
+            </div>
             <figcaption>AI Builder • Video Editor • Content Creator</figcaption>
           </figure>
           <svg class="avatar-doodle" viewBox="0 0 420 420" role="img" aria-label="Cartoon avatar">
@@ -157,7 +160,8 @@
             <h3>PondyEats</h3>
             <p>A food directory for Pondicherry restaurants. Local problem, local solution.</p>
             <div class="project-visual image-preview food-preview" aria-hidden="true">
-              <img src="download.png" alt="" />
+              <img src="download.png" alt="" onerror="this.closest('.image-preview').classList.add('image-missing')" />
+              <div class="project-image-fallback"><span>PondyEats</span></div>
             </div>
             <p class="project-impact">Quick restaurant discovery with filters, listings, and local context.</p>
             <div class="card-tags"><span>Next.js</span><span>Supabase</span><span>Vercel</span></div>
@@ -185,7 +189,8 @@
             <h3>Curatrix</h3>
             <p>CLI / MCP local-first project security auditor for dependencies, secrets, infra, CI, and AI-agent surfaces.</p>
             <div class="project-visual image-preview curatrix-preview" aria-hidden="true">
-              <img src="banner.png" alt="" />
+              <img src="banner.png" alt="" onerror="this.closest('.image-preview').classList.add('image-missing')" />
+              <div class="project-image-fallback"><span>Curatrix</span></div>
             </div>
             <p class="project-impact">Scans dependencies, secrets, infrastructure, CI pipelines, and AI-agent surfaces across a codebase.</p>
             <div class="card-tags"><span>CLI</span><span>MCP</span><span>Security</span></div>
